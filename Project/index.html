@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        legend.form {
+            width: auto;
+        }
+
+        body {
+            margin: 20px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 11px;          
+        }
+
+        div.row {
+            margin: 10px;
+        }
+
+    </style>
+
+    <title>JS Basics Training</title>
+</head>
+<body>
+ 
+    <div class="container">
+
+    <fieldset class="border homework" id="border-homework">
+        <legend class="form ml-4"><h3 class="border homework px-3 py-1">
+            <i class="fa fa-book"></i> Homework scripts</h3></legend>
+
+                <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary btn-block" onclick="homework11()"> Task1.1 </button>
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework21()"> Task2.1 </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework22()"> Task2.2 </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework23()"> Task2.3 </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework24()"> Task2.4 </button>
+                    </div>
+                </div>
+    </fieldset>
+    <hr>
+    <fieldset class="border tricky" id="border-tricky">
+        <legend class="form ml-4"><h3 class="border tricky px-3 py-1">
+            <i class="fa fa-cogs"></i> Tricky scripts</h3></legend>
+                
+                <div class="row">
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="tricky1()"> Tricky 1 </button>
+                    </div>
+                    <div class="col-md-2">
+                            <button class="btn btn-secondary btn-block" onclick="tricky2()"> Tricky 2 </button>
+                    </div>
+                </div>
+    </fieldset>
+    <hr>       
+    <fieldset class="border whatever" id="border-whatever">
+        <legend class="form ml-4"><h3 class="border whatever px-3 py-1">
+            <i class="fa fa-check-square-o"></i> Whatever scripts</h3></legend>
+
+                <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary btn-block" onclick="whatever1()"> Whatever 1 </button>
+                        </div>
+                        <div class="col-md-2">
+                                <button class="btn btn-secondary btn-block" onclick="whatever2()"> Whatever 2 </button>
+                        </div>
+                    </div>
+    </fieldset>
+ 
+</div>
+
+<script src="scripts/homework.js"></script>
+<script src="scripts/tricky.js"></script>
+<script src="scripts/whatever.js"></script>
+
+</body>
+
+</html>

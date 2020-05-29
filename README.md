@@ -1,2 +1,2 @@
 # JS-basics
-Open "index.html"
+File to start: "Project/index.html"

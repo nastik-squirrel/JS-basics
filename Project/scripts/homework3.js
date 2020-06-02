@@ -39,10 +39,9 @@ function homework32() {
     if (age || (age == 0)) {
         if (age < 14 || age > 90) {
             isOutsideRange = true;
-        }
-        else {
+        } else {
             isOutsideRange = false;
-        }  
+        }
     } else {
         isOutsideRange = 'Unknown';
     }
@@ -130,6 +129,5 @@ function homework35() {
 //            break;
 //        default:
 //            alert('I don\'t know you')
-//    } 
-// 
+//    }
 }

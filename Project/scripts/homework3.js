@@ -37,22 +37,18 @@ function homework32() {
 // Variant 1: IF-ELSE
 
     if (age || (age == 0)) {
-        if (age < 14) {
+        if (age < 14 || age > 90) {
             isOutsideRange = true;
-        } else {
-            if (age > 90) {
-                isOutsideRange = true;
-            }
-            else {
-                isOutsideRange = false;
-            }
-        }   
+        }
+        else {
+            isOutsideRange = false;
+        }  
     } else {
         isOutsideRange = 'Unknown';
     }
     getOutput(isOutsideRange, 1);
 
-// Variant 1: IF-ELSE with NOT
+// Variant 2: IF-ELSE with NOT
 
     if (age || (age == 0)) {
         if (!(age >=14 && age<=90)) {
@@ -63,7 +59,7 @@ function homework32() {
     } else {
         isOutsideRange = 'Unknown';
     }
-    getOutput(isOutsideRange, 1);
+    getOutput(isOutsideRange, 2);
 
 // Variant 3: TERNARY
 
@@ -92,31 +88,48 @@ function homework34() {
 
 function homework35() {
 
-// CASE used  instead of IF :) 
-
     const correctLogin = 'Admin';
     const correctPassword = 'TheMaster';
 
     let login = prompt('Who\'s there?');
-    switch(login) {
-        case null:
+    if (login == correctLogin) {
+        let password = prompt('Password?');
+        if (password == correctPassword) {
+            alert('Welcome!');
+        } else if (password == null) {
             alert('Canceled');
-            break;
-        case correctLogin:
-            let password = prompt('Password?');
-            switch(password) {
-                case null:
-                    alert('Canceled');
-                    break;
-                case correctPassword:
-                    alert('Welcome!');
-                    break;
-                default:
-                    alert('Wrong password');
-                    break;
-            };
-            break;
-        default:
-            alert('I don\'t know you')
-    } 
+        } else {
+            alert('Wrong password');
+        }
+    } else if (login == null) {
+        alert('Canceled');
+    } else {
+        alert('I don\'t know you');
+    }
+
+// CASE used  instead of IF :) 
+
+//    let login = prompt('Who\'s there?');
+//    switch(login) {
+//        case null:
+//            alert('Canceled');
+//            break;
+//        case correctLogin:
+//            let password = prompt('Password?');
+//            switch(password) {
+//                case null:
+//                    alert('Canceled');
+//                    break;
+//                case correctPassword:
+//                    alert('Welcome!');
+//                    break;
+//                default:
+//                    alert('Wrong password');
+//                    break;
+//            };
+//            break;
+//        default:
+//            alert('I don\'t know you')
+//    } 
+// 
 }

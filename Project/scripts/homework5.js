@@ -47,13 +47,7 @@ function homework53() {
 function homework54() {
 
     function filterRange(array, a, b) {
-        newArray = []
-        for (let i = 0; i < array.length; i++) {
-            if (array[i] >= a && array[i] <= b) {
-                newArray.push(array[i])                
-            }
-        }
-        return newArray
+        return array.filter(item => (item >= a && item <= b))
     }
 
     let initialArray = [4, 7, 44, 56, 198, 3, 55, 23, 14, 233];

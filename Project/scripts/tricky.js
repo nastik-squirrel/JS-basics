@@ -65,11 +65,11 @@ function tricky4() {
     let ladder = {
         step: 0,
         up(n) {
-          for (i = 0; i < nu; i++) this.step++;
+          for (i = 0; i < n; i++) this.step++;
           return this;
         },
         down(n) {
-          for (i = 0; i < nd; i++) this.step--;
+          for (i = 0; i < n; i++) this.step--;
           return this;
         },
         showStep: function() { // shows the current step
@@ -78,5 +78,5 @@ function tricky4() {
         }
       };
 
-    console.log(ladder.up(5).up(8).down(3).showStep());
+    ladder.up(5).up(8).down(3).showStep();
 }

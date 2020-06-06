@@ -29,7 +29,7 @@ function homework62() {
     let average = getAverageAge(users);
 
     console.table(users)
-    console.log(`Avarage age is ${average}`)
+    console.warn(`Avarage age is ${average}`)
 }
 
 function homework63() {

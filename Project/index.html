@@ -23,15 +23,17 @@
         div.row {
             margin: 10px;
         }
-        
-        .tooltip {
-            border-color: black;
-        }
+
         .tooltip > .tooltip-inner {
-            background-color: white;
             color: black;
-            border-color: black;;
+            background-color: lightgrey;
         }
+
+        .tooltip .arrow::before {
+            background-color: transparent;
+            border-bottom-color: lightgrey !important;
+        }
+
     </style>
 
     <title>JS Basics Training</title>
@@ -46,100 +48,100 @@
 
                 <div class="row">
                         <div class="col-md-2">
-                            <button class="btn btn-secondary btn-block" onclick="homework11()"> Task1.1 </button>
+                            <button class="btn btn-secondary btn-block" onclick="homework11()" id="homework11_tt"> Task1.1 </button>
                         </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework21()"> Task2.1 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework21()" id="homework21_tt"> Task2.1 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework22()"> Task2.2 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework22()" id="homework22_tt"> Task2.2 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework23()"> Task2.3 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework23()" id="homework23_tt"> Task2.3 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework24()"> Task2.4 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework24()" id="homework24_tt"> Task2.4 </button>
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework31()"> Task3.1 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework31()" id="homework31_tt"> Task3.1 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework32()"> Task3.2 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework32()" id="homework32_tt"> Task3.2 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework33()"> Task3.3 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework33()" id="homework33_tt"> Task3.3 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework34()"> Task3.4 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework34()" id="homework34_tt"> Task3.4 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework35()"> Task3.5 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework35()" id="homework35_tt"> Task3.5 </button>
                     </div>
                 </div>
         
                 <div class="row">
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework41()"> Task4.1 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework41()" id="homework41_tt"> Task4.1 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework42()"> Task4.2 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework42()" id="homework42_tt"> Task4.2 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework43()"> Task4.3 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework43()" id="homework43_tt"> Task4.3 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework44()"> Task4.4 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework44()" id="homework44_tt"> Task4.4 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework45()"> Task4.5 </button>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework51()"> Task5.1 </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework52()"> Task5.2 </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework53()"> Task5.3 </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework54()"> Task5.4 </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework55()"> Task5.5 </button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework56()"> Task5.6 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework45()" id="homework45_tt"> Task4.5 </button>
                     </div>
                 </div>
     
                 <div class="row">
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework61()"> Task6.1 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework51()" id="homework51_tt"> Task5.1 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework62()"> Task6.2 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework52()" id="homework52_tt"> Task5.2 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework63()"> Task6.3 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework53()" id="homework53_tt"> Task5.3 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework64()"> Task6.4 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework54()" id="homework54_tt"> Task5.4 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework65()"> Task6.5 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework55()" id="homework55_tt"> Task5.5 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="homework66()"> Task6.6 </button>
+                        <button class="btn btn-secondary btn-block" onclick="homework56()" id="homework56_tt"> Task5.6 </button>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework61()" id="homework61_tt"> Task6.1 </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework62()" id="homework62_tt"> Task6.2 </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework63()" id="homework63_tt"> Task6.3 </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework64()" id="homework64_tt"> Task6.4 </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework65()" id="homework65_tt"> Task6.5 </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-secondary btn-block" onclick="homework66()" id="homework66_tt"> Task6.6 </button>
                     </div>
                 </div>
 
@@ -198,7 +200,7 @@
 
 <script>
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
     })
 </script>
 

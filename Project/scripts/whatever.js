@@ -14,5 +14,5 @@ function whatever2()
     let number = 10
     alert(`Number is ${number}`);
 
-    x = 5
+    let x = 5
 }

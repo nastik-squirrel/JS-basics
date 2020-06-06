@@ -59,3 +59,24 @@ function tricky3() {
     
     console.log(fibonacciArray);
 }
+
+function tricky4() {
+    
+    let ladder = {
+        step: 0,
+        up(nu) {
+          for (i = 0; i < nu; i++) this.step++;
+          return this;
+        },
+        down(nd) {
+          for (i = 0; i < nd; i++) this.step--;
+          return this;
+        },
+        showStep: function() { // shows the current step
+          alert( this.step );
+          return this;
+        }
+      };
+
+    console.log(ladder.up(5).up(8).down(3).showStep());
+}

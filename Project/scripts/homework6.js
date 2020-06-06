@@ -69,7 +69,7 @@ function homework64() {
 
     function multiplyNumeric(obj) {
         for (let key in obj) {
-            if (typeof(obj[key]) == "number") obj[key] = obj[key]*2 
+            if (typeof(obj[key]) == "number") obj[key] *= 2 
         };
     }
 
@@ -82,14 +82,21 @@ function homework64() {
         {prop1: '4 + 4', prop2: '1', prop3: 'null'},
     ]
 
-    console.log('objects before multiplier:');
+    console.warn('objects before multiplier:');
     console.table(objects);
 
     for (i = 0; i < objects.length; i++) {
         multiplyNumeric(objects[i]);
     }
 
-    console.log('objects after multiplier:');
+    console.warn('objects after multiplier:');
+    console.table(objects);
+    
+    objects.forEach(element => {
+        multiplyNumeric(element)
+    });
+
+    console.warn('objects after multiplier forEach:');
     console.table(objects);
 }
 
@@ -118,12 +125,12 @@ function homework66() {
 
     let ladder = {
         step: 0,
-        up() {
-          this.step++;
+        up(n = 1) {
+          this.step += n;
           return this;
         },
-        down() {
-          this.step--;
+        down(n = 1) {
+          this.step -= n;
           return this;
         },
         showStep: function() { // shows the current step
@@ -132,6 +139,7 @@ function homework66() {
         }
       };
 
-    console.log(ladder.up().up().down().showStep());
+    ladder.up().up().down().showStep();
+    ladder.up(5).up(8).down(3).showStep().up(-6).down().showStep();
 
 }

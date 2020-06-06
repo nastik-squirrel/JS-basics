@@ -64,11 +64,11 @@ function tricky4() {
     
     let ladder = {
         step: 0,
-        up(nu) {
+        up(n) {
           for (i = 0; i < nu; i++) this.step++;
           return this;
         },
-        down(nd) {
+        down(n) {
           for (i = 0; i < nd; i++) this.step--;
           return this;
         },

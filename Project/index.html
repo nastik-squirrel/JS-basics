@@ -23,7 +23,15 @@
         div.row {
             margin: 10px;
         }
-
+        
+        .tooltip {
+            border-color: black;
+        }
+        .tooltip > .tooltip-inner {
+            background-color: white;
+            color: black;
+            border-color: black;;
+        }
     </style>
 
     <title>JS Basics Training</title>
@@ -143,16 +151,16 @@
                 
                 <div class="row">
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="tricky1()"> Tricky 1 </button>
+                        <button class="btn btn-secondary btn-block" onclick="tricky1()" id="tricky1_tt"> Tricky 1 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="tricky2()"> Tricky 2 </button>
+                        <button class="btn btn-secondary btn-block" onclick="tricky2()" id="tricky2_tt"> Tricky 2 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="tricky3()"> Tricky 3 </button>
+                        <button class="btn btn-secondary btn-block" onclick="tricky3()" id="tricky3_tt"> Tricky 3 </button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-secondary btn-block" onclick="tricky4()"> Tricky 4 </button>
+                        <button class="btn btn-secondary btn-block" onclick="tricky4()" id="tricky4_tt"> Tricky 4 </button>
                     </div>
                 </div>
     </fieldset>
@@ -163,10 +171,10 @@
 
                 <div class="row">
                         <div class="col-md-2">
-                            <button class="btn btn-secondary btn-block" onclick="whatever1()"> Whatever 1 </button>
+                            <button class="btn btn-secondary btn-block" onclick="whatever1()" id="whatever1_tt"> Whatever 1 </button>
                         </div>
                         <div class="col-md-2">
-                                <button class="btn btn-secondary btn-block" onclick="whatever2()"> Whatever 2 </button>
+                                <button class="btn btn-secondary btn-block" onclick="whatever2()" id="whatever2_tt"> Whatever 2 </button>
                         </div>
                     </div>
     </fieldset>
@@ -182,6 +190,17 @@
 
 <script src="scripts/tricky.js"></script>
 <script src="scripts/whatever.js"></script>
+
+<script src="scripts/add_tooltips.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 
 </body>
 

@@ -37,7 +37,7 @@ function homework63() {
     function isEmpty(obj) {
         let count = 0;
         for (let key in obj) count ++;
-        return count > 0 ? false : true;
+        return (count != 0);
     }
 
     let fullSchedule = {};

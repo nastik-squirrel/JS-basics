@@ -1,0 +1,23 @@
+legend.form {
+  width: auto;
+}
+
+body {
+  margin: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 11px;
+}
+
+div.row {
+  margin: 10px;
+}
+
+.tooltip>.tooltip-inner {
+  color: black;
+  background-color: lightgrey;
+}
+
+.tooltip .arrow::before {
+  background-color: transparent;
+  border-bottom-color: lightgrey !important;
+}

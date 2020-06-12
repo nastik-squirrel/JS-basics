@@ -38,6 +38,11 @@ let homework72_tt = "Filter through function isInBetween"
 let homework73_tt = "Rewrite function showMessage to the self-calling"
 let homework74_tt = "Fix the code"
 
+let homework81_tt = "Add inline style to even children inside grid-1"
+let homework82_tt = "Add class grid-item-background to odd children inside grid-1"
+let homework83_tt = "Create function toggleClass(element, className)"
+let homework84_tt = "Read text from prompt and add this text to element .text-placeholder"
+
 let tricky1_tt = "Homework task 3.5 with Callback"
 let tricky2_tt = "Sum of fist n integers using Reduce"
 let tricky3_tt = "Create a Fibonacci array"
@@ -54,6 +59,7 @@ const tooltips = {
     homework51_tt, homework52_tt, homework53_tt, homework54_tt, homework55_tt, homework56_tt,  
     homework61_tt, homework62_tt, homework63_tt, homework64_tt, homework65_tt, homework66_tt,
     homework70_tt, homework71_tt, homework72_tt, homework73_tt, homework74_tt,
+    homework81_tt, homework82_tt, homework83_tt, homework84_tt,
     tricky1_tt, tricky2_tt, tricky3_tt, tricky4_tt,
     whatever1_tt, whatever2_tt
 }

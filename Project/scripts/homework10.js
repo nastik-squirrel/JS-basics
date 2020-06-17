@@ -1,27 +1,30 @@
 (function homeworkA1() {
     
-    function moveBall() {
+    function changeCoordinate(coordinate) {
+        let a = (coordinate != "") ? parseInt(coordinate) : 0;
+        return a + 15 + "px";
+    }
+
+    function moveBallDiagonal() {
         let ball = document.getElementById("ball");
-        let x = (ball.style.left != "") ? parseInt(ball.style.left) : 0
-        let y = (ball.style.bottom != "") ? parseInt(ball.style.bottom) : 0
-        ball.style.left = x + 15 + "px";
-        ball.style.bottom = y + 15 + "px";
+        ball.style.left = changeCoordinate(ball.style.left);
+        ball.style.bottom = changeCoordinate(ball.style.bottom);
     }
 
     const ballButton = document.getElementById("moveBallXY");
-    ballButton.addEventListener("click", () => setTimeout(moveBall, 500));
+    ballButton.addEventListener("click", () => setTimeout(moveBallDiagonal, 500));
 
 }());
 
 (function homeworkA2() {
-    
-    // function escapeClosePopupButton(event) {
-    //     if (event.key == "Escape") {
-    //         document.querySelector(".popup").classList.remove("visible");
-    //     }
-    // }
 
-    // window.addEventListener("keydown", escapeClosePopupButton);
+    function moveBallRight() {
+        let ball = document.getElementById("ball");
+        ball.style.left = ballInput.value + "px";
+    }
+
+    const ballInput = document.getElementById("moveBallX");
+    ballInput.addEventListener("change", moveBallRight);
 
 }());
 

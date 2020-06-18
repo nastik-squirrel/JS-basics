@@ -1,5 +1,3 @@
-(function homework91() {
-
     const openButton = document.getElementById("openPopupButton");
     const closeButton = document.getElementById("closePopupButton");
 
@@ -13,10 +11,6 @@
     function closePopupButton() {
         document.querySelector(".popup").classList.remove("visible");
     }
-
-}());
-
-(function homework92() {
     
     function escapeClosePopupButton(event) {
         if (event.key == "Escape") {
@@ -25,11 +19,7 @@
     }
 
     window.addEventListener("keydown", escapeClosePopupButton);
-
-}());
-
-(function homework93() {
-    
+  
     function addCircle() {
         let circle = document.createElement("div");
         circle.classList.add("circle");
@@ -41,11 +31,7 @@
     const circleButton = document.getElementById("addCircleButton");
 
     circleButton.addEventListener("click", addCircle);
-    
-}());
 
-(function homework94() {
-    
     function removeCircle() {
         container = document.querySelector(".circle-container");
         child = container.lastElementChild;
@@ -55,5 +41,3 @@
     const circleButtonRemove = document.getElementById("removeCircleButton");
 
     circleButtonRemove.addEventListener("click", removeCircle);
-    
-}());

@@ -1,3 +1,6 @@
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        })
 
 let homework11_tt = "Nothing"
 

@@ -1,20 +1,22 @@
     const openButton = document.getElementById("openPopupButton");
     const closeButton = document.getElementById("closePopupButton");
 
+    const popup = document.querySelector(".popup")
+
     openButton.addEventListener("click", openPopupButton);
     closeButton.addEventListener("click", closePopupButton);
 
     function openPopupButton() {
-        document.querySelector(".popup").classList.add("visible");
+        popup.classList.add("visible");
     }
 
     function closePopupButton() {
-        document.querySelector(".popup").classList.remove("visible");
+        popup.classList.remove("visible");
     }
     
     function escapeClosePopupButton(event) {
         if (event.key == "Escape") {
-            document.querySelector(".popup").classList.remove("visible");
+            popup.classList.remove("visible");
         }
     }
 

@@ -1,4 +1,4 @@
-let ball = document.getElementById("ball");
+    let ball = document.getElementById("ball");
 
     function changeCoordinate(coordinate) {
         let a = (coordinate != "") ? parseInt(coordinate) : 0;
@@ -38,26 +38,6 @@ let ball = document.getElementById("ball");
             )
         }
     }
-
-    // function checkForm(event) {
-    //     if (event.target.type == "text") {
-    //         if (typeof(event.target.value) != "string" || event.target.value.length <3 || event.target.value.length > 20) {
-    //             console.error(`${event.target.name} should be a string from 3 to 20 characters`);
-    //             event.target.classList.add("invalid");
-    //         } else {
-    //             event.target.classList.remove("invalid");
-    //         }
-    //     } else if (event.target.type == "number") {
-    //         let v = parseInt(event.target.value, 10);
-    //         console.log(v)
-    //         if (isNaN(v) || v < 0 || v > 115) {
-    //             console.error(`${event.target.name} should be a number from 0 to 115`);
-    //             event.target.classList.add("invalid");
-    //         } else {
-    //             event.target.classList.remove("invalid");
-    //         }
-    //     }
-    // }
 
     const form = document.getElementById("userForm");
     form.addEventListener("change", checkForm);
